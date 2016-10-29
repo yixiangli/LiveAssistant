@@ -10,7 +10,7 @@
 	<h2>生活百宝箱</h2>
 <div>
 
-	<form action="./delivery/query">
+	<form action="/delivery/query">
 		快递类型：
 	    <select name="com_type">
 	    	<option value="shentong">申通</option>

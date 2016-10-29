@@ -15,17 +15,25 @@ import com.lyx.ag.la.delivery.service.IFreeDeliveryApiService;
  * @date 2016年10月30日
  * @use 快递查询控制层
  */
-@Controller("/delivery")
+@Controller
+@RequestMapping("/delivery")
 public class DeliveryController {
 
 	@Resource
 	IFreeDeliveryApiService freeDeliveryApiService;
 	
+	@RequestMapping("/view")
+	public ModelAndView view(){
+		ModelAndView mav = new ModelAndView("/delivery");		
+		return mav;
+	}
+	
+	
 	@RequestMapping("/query")
 	public ModelAndView queryDeliveryInfo(String com_type,String delivery_id){
-		System.out.println("111111111");
 		ModelAndView mav = new ModelAndView("/deliveryResult");		
 		DeliveryApiBean bean = freeDeliveryApiService.findDeliveryInfoByConditions(com_type, delivery_id);
+		System.out.println(bean);
 		mav.addObject("del_bean",bean);
 		return mav;
 	}

@@ -83,7 +83,7 @@ public class DeliveryApiBean {
 		// TODO Auto-generated method stub
 		return "DeliveryInfo [nu=" + nu + ", message=" + message + ", ischeck=" + ischeck + ", com="
 		+ com + ", updatetime=" + updatetime + ", status=" + status + ", condition=" + condition + ", state="
-		+ state + "data" + data +"]";
+		+ state + ",data" + data +"]";
 	}
 	
 }

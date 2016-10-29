@@ -10,6 +10,18 @@
 <title>快递物流信息</title>
 </head>
 <body>
-	<c:out value="${del_bean.data}"></c:out>
+
+	运单编号：<c:out value="${del_bean.nu}"></c:out> <br>
+	运单信息：<c:out value="${del_bean.message}"></c:out>  <br>
+	运单公司：<c:out value="${del_bean.com}"></c:out>  <br>
+ 	<hr>
+ 	详细信息：
+ 	<br>
+	<c:forEach items="${del_bean.data}" var="info">  
+		${info.time} <br>
+		${info.context} <br>
+		${info.ftime} <br>
+		<hr>
+	</c:forEach>
 </body>
 </html>

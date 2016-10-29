@@ -10,9 +10,9 @@
 	<h2>生活百宝箱</h2>
 <div>
 
-	<form action="./query">
+	<form action="./delivery/query">
 		快递类型：
-	    <select>
+	    <select name="com_type">
 	    	<option value="shentong">申通</option>
 	    	<option value="ems">邮政&EMS</option>
 	    	<option value="shunfeng">顺丰</option>
@@ -27,7 +27,7 @@
 	    </select>
 	    
 	    快递单号：
-		<input type="text">
+		<input type="text" name="delivery_id">
 		<br>
 		<input type="submit" name="提交">
 	</form>

@@ -5,6 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-	<a href="courier.jsp">跳转</a>
+	<a href="delivery.jsp">跳转</a>
 </body>
 </html>

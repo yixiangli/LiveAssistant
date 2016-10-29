@@ -1,8 +1,6 @@
 package com.lyx.ag.la.delivery.service;
 
-import java.util.List;
-
-import com.lyx.ag.la.delivery.bean.DeliveryInfoBean;
+import com.lyx.ag.la.delivery.bean.DeliveryApiBean;
 
 /**
  * 
@@ -12,7 +10,7 @@ import com.lyx.ag.la.delivery.bean.DeliveryInfoBean;
  */
 public interface IFreeDeliveryApiService {
 
-	public List<DeliveryInfoBean> findDeliveryInfoByConditions(String type,String id);
+	public DeliveryApiBean findDeliveryInfoByConditions(String type,String id);
 	
 	
 }

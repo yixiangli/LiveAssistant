@@ -1,6 +1,6 @@
 package com.lyx.ag.la.delivery.bean;
 
-import java.util.Map;
+import com.alibaba.fastjson.JSONArray;
 
 public class DeliveryApiBean {
 
@@ -21,7 +21,7 @@ public class DeliveryApiBean {
 	//状态
 	private String state;	
 	//快递详情
-	private Map<String,Object> data;
+	private JSONArray data;
 	
 	public String getNu() {
 		return nu;
@@ -71,11 +71,19 @@ public class DeliveryApiBean {
 	public void setState(String state) {
 		this.state = state;
 	}
-	public Map<String, Object> getData() {
+	public JSONArray getData() {
 		return data;
 	}
-	public void setData(Map<String, Object> data) {
+	public void setData(JSONArray data) {
 		this.data = data;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "DeliveryInfo [nu=" + nu + ", message=" + message + ", ischeck=" + ischeck + ", com="
+		+ com + ", updatetime=" + updatetime + ", status=" + status + ", condition=" + condition + ", state="
+		+ state + "data" + data +"]";
 	}
 	
 }

@@ -23,6 +23,7 @@ public class DeliveryController {
 	
 	@RequestMapping("/query")
 	public ModelAndView queryDeliveryInfo(String com_type,String delivery_id){
+		System.out.println("111111111");
 		ModelAndView mav = new ModelAndView("/deliveryResult");		
 		DeliveryApiBean bean = freeDeliveryApiService.findDeliveryInfoByConditions(com_type, delivery_id);
 		mav.addObject("del_bean",bean);
